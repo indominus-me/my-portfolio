@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import Typed from 'typed.js';
 
 @Component({
   selector: 'app-content',
@@ -10,7 +11,12 @@ export class ContentComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    setTimeout(() => this.start = true, 1000)
+    setTimeout(() => this.start = true, 1000);
+      new Typed('#typed', {
+      strings: ['Web Developer', 'Web Designer', 'Video Editor', 'Graphic Designer'],
+      typeSpeed: 50,
+      loop: true
+    });
   }
 
 }
