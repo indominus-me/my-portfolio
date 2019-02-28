@@ -14,7 +14,8 @@ export class ContentComponent implements OnInit {
     setTimeout(() => this.start = true, 1000);
       new Typed('#typed', {
       strings: ['Web Developer', 'Web Designer', 'Video Editor', 'Graphic Designer'],
-      typeSpeed: 50,
+      typeSpeed: 70,
+      backSpeed: 40,
       loop: true
     });
   }

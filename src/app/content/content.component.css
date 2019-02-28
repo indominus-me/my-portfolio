@@ -1,12 +1,33 @@
-h1 {
-  text-align: center;
+.main-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
 }
 .content-main {
+  display: table;
+  position: absolute;
+  text-align: center;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  margin: auto;
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) , url('https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  z-index: -1;
+
+}
+.middle {
+  display: table-cell;
+  vertical-align: middle;
 }
 .block {
+  margin-left: auto;
+  margin-right: auto;
+}
 
+h1 {
+  font-size: 4.5rem;
+  color: white;
+}
+
+span {
+  font-size: 2rem;
+  color: white;
 }
